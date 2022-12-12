@@ -1,13 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banca Digital</title>
     <link rel="stylesheet" href="build/css/app.css">
+
+    <!-- Poppins -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+    <!-- BoxIcons -->
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
 </head>
+
 <body>
-    
+    <header class="header">
+        <nav class="navegacion">
+            <div class="logo">
+                <h3 class="logo__title">Banca Digital</h3>
+            </div>
+
+            <ul class="navegacion__items">
+                <li class="navegacion__item">Personas</li>
+                <li class="navegacion__item">Nosotros</li>
+                <li class="navegacion__item">Empresas</li>
+                <li class="navegacion__item--white">Inicia Sesión</li>
+                <li class="navegacion__item--purple">Descarga la App</li>
+            </ul>
+        </nav>
+
+        <div class="header__box">
+            <div class="header__content">
+                <p class="header__pretitle"><span>Nuevo</span> Adquiere nuestra tarheta de crédito</p>
+
+                <h1 class="header__title">La mejor banca digital<span>.</span></h1>
+
+                <p class="header__parragraph">Dile adios a los bancos tradicionales y disfruta de los beneficios de un banco 100% digital.</p>
+
+                <a href="#" class="header__btn">Abre tu cuenta</a>
+
+                <div class="header__store">
+                    <div class="apple__btn">
+                        <i class='bx bxl-apple'></i>
+
+                        <p class="apple__text">Consiguelo en <br><span>App Store</span></p>
+                    </div>
+
+                    <div class="play__btn">
+                        <i class='bx bxl-play-store' ></i>
+
+                        <p class="play__text">
+                            Disponible en <br><span>Play Store</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__img">
+                <picture>
+                    <source srcset="build/img/img1.avif" type="image/avif">
+                    <source srcset="build/img/img1.webp" type="image/webp">
+                    <img class="header__imagen" loading="lazy" src="build/img/img1.png" alt="imagen header">
+                <picture>
+            </div>
+        </div>
+    </header>
 </body>
+
 </html>
