@@ -2,5 +2,27 @@
 @use 'base/mixins' as m;
 
 .navegacion{
-    background-color: red;
+    text-align: center;
+    margin-top: 5rem;
+
+    &__items{
+        margin-top: 2rem;
+    }
+
+    &__item{
+        margin-top: 1rem;
+    }
+
+    &__item--white{
+        margin-top: 2rem;
+    }
+
+    &__item--purple{
+        margin-top: 2rem;
+        background-color: v.$primario;
+        padding: 1.5rem;
+        border-radius: .5rem;
+        color: v.$blanco;
+        display: inline-block;
+    }
 }
