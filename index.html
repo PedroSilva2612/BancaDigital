@@ -14,21 +14,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
-
+    
     <!-- BoxIcons -->
-
+    
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-
+    
+    
 </head>
 
 <body>
+    
     <header class="header">
         <nav class="navegacion container">
             <div class="navegacion__logo">
                 <h3 class="navegacion__title">Banca Digital</h3>
             </div>
 
+            <div class="header__boxBg"></div>
+            
             <ul class="navegacion__items">
                 <li class="navegacion__item">Personas</li>
                 <li class="navegacion__item">Nosotros</li>
@@ -38,33 +41,36 @@
             </ul>
         </nav>
 
-        <div class="header__box">
+        <div class="header__box container">
             <div class="header__content">
-                <p class="header__pretitle"><span>Nuevo</span> Adquiere nuestra tarheta de crédito</p>
+                <p class="header__pretitle"><span>Nuevo</span> Adquiere nuestra tarjeta de crédito</p>
+        
+                <h1 class="header__title">La mejor <br>banca digital<span>.</span></h1>
+        
+                <p class="header__parragraph">Dile adios a los bancos tradicionales <br>y disfruta de los beneficios de un <br>banco 100% digital<span>.</span></p>
+        
 
-                <h1 class="header__title">La mejor banca digital<span>.</span></h1>
-
-                <p class="header__parragraph">Dile adios a los bancos tradicionales y disfruta de los beneficios de un banco 100% digital.</p>
-
-                <a href="#" class="header__btn">Abre tu cuenta</a>
-
+                <div class="header__btnBox">
+                    <a href="#" class="header__btn">Abre tu cuenta</a>
+                </div>
+        
                 <div class="header__store">
-                    <div class="apple__btn">
+                    <div class="header__apple-btn">
                         <i class='bx bxl-apple'></i>
-
-                        <p class="apple__text">Consiguelo en <br><span>App Store</span></p>
+        
+                        <p class="header__apple-text">Consiguelo en <br><span>App Store</span></p>
                     </div>
-
-                    <div class="play__btn">
+        
+                    <div class="header__play-btn">
                         <i class='bx bxl-play-store' ></i>
-
-                        <p class="play__text">
+        
+                        <p class="header__play-text">
                             Disponible en <br><span>Play Store</span>
                         </p>
                     </div>
                 </div>
             </div>
-
+        
             <div class="header__img">
                 <picture>
                     <source srcset="build/img/img1.avif" type="image/avif">
@@ -73,6 +79,7 @@
                 <picture>
             </div>
         </div>
+
     </header>
 </body>
 

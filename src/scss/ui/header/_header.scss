@@ -1,5 +1,167 @@
-@use 'base/variables' as v;
-@use 'base/mixins' as m;
+@use 'base/variables'as v;
+@use 'base/mixins'as m;
+
+.header {
+    background-color: v.$bgHero;
+
+    @include m.desktop {
+        background-color: v.$blanco;
+    }
+
+    &__boxBg {
+
+        @include m.desktop {
+            position: absolute;
+            height: 82rem;
+            width: 56%;
+            top: 0;
+            right: 0;
+            background-color: v.$bgHero;
+        }
+
+        @include m.desktopXL { 
+            width: 55%;
+        }
+    }
+
+    &__box {
+
+        margin-top: 5rem;
+
+        @include m.desktop {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: -3.5rem;
+        }
+
+    }
+     
+
+    &__pretitle {
+
+        color: v.$primario;
+
+        span {
+            background-color: v.$primario;
+            color: v.$blanco;
+            padding: .5rem;
+            border-radius: 1rem;
+        }
+
+        @include m.tablet {
+            text-align: center;
+        }
+
+        @include m.desktop { 
+            text-align: left;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        margin-top: 3rem;
+        font-size: 6rem;
+        text-align: center;
+
+        span {
+            color: v.$primario;
+        }
+
+        @include m.desktop { 
+            text-align: left;
+        }
+    }
+
+    &__parragraph {
+        text-align: center;
+        margin-bottom: 5rem;
+
+        @include m.tablet {
+            font-size: 2rem;
+        }
+
+        @include m.desktop { 
+            text-align: left;
+        }
+    }
+
+    &__btnBox {
+        text-align: center;
+        margin-bottom: 5rem;
+
+        @include m.desktop { 
+            text-align: left;
+        }
+    }
+
+    &__btn {
+        background-color: v.$primario;
+        padding: 2rem 1rem;
+        border-radius: 1rem;
+        color: v.$blanco;
+    }
+
+    &__store {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+
+        @include m.tablet { 
+            flex-direction: row;
+        }
+
+        @include m.desktop { 
+            justify-content: space-between;
+        }
+    }
+
+    &__apple-btn {
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    &__apple-text {
+        line-height: 1.5;
+
+        span {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    }
+
+    &__play-btn {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    &__play-text {
 
 
+        span {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    }
 
+
+    &__img {
+        z-index: 1;
+    }
+
+    &__imagen{
+        margin: 0 auto;
+    }
+
+
+}
+
+.bx {
+    font-size: 5rem;
+}
