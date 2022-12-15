@@ -2,6 +2,7 @@
 @use 'base/mixins'as m;
 
 .header {
+    position: relative;
     background-color: v.$bgHero;
 
     @include m.desktop {
@@ -10,17 +11,23 @@
 
     &__boxBg {
 
+
         @include m.desktop {
             position: absolute;
             height: 82rem;
             width: 56%;
+            max-width: 300rem;
             top: 0;
             right: 0;
             background-color: v.$bgHero;
         }
 
         @include m.desktopXL { 
-            width: 55%;
+            // width: 55%;
+        }
+
+        @media(min-width: 3000px){
+            width: 54%;
         }
     }
 
