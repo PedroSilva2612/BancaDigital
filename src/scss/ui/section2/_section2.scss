@@ -1,0 +1,72 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.section2{
+    margin-top: 5rem;
+
+    &__title{
+        text-align: left;
+        font-weight: 700;
+        font-size: 5rem;
+
+        span{
+            color: v.$primario;
+        }
+    }
+
+    &__parragraph{
+        font-size: 2rem;
+        text-align: left;
+        margin-bottom: 5rem;
+    }
+
+    &__cta{
+        background-color: v.$primario;
+        color: v.$blanco;
+        padding: 2rem 2rem;
+        border-radius: 5px;
+    }
+
+    &__imgBox{
+        margin-top: 5rem;
+    }
+
+    @include m.tablet { 
+        &__title{
+            text-align: center;
+            margin-top: 8rem;
+        }
+
+        &__parragraph{
+            text-align: center;
+        }
+
+        &__ctaBox{
+            text-align: center;
+        }
+
+        &__imagen{
+            margin: 0 auto;
+        }
+    }
+
+    @include m.desktop { 
+        
+        @include m.grid(2, 1rem);
+        align-items: center;
+
+        &__title{
+            text-align: left;
+        }
+
+        &__parragraph{
+            text-align: left;
+        }
+
+        &__ctaBox{
+            text-align: left;
+        }
+        
+    }
+    
+}
