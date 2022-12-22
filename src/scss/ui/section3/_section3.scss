@@ -5,15 +5,28 @@
 
     margin-top: 5rem;
 
+    @include m.desktop { 
+        margin-top: 12rem;
+    }
+
     &__title{
         text-align: center;
         font-size: 5rem;
         font-weight: 700;
+
+        @include m.desktop { 
+            text-align: left;
+        }
     }
 
     &__parragraph{
         text-align: center;
         font-size: 2rem;
+
+        @include m.desktop { 
+            text-align: left;
+            margin-top: 0;
+        }
     }
 
 }
@@ -22,14 +35,60 @@
 
     text-align: center;
 
+    @include m.desktop { 
+        @include m.grid(3, 2rem);
+    }
+
+    &__card{
+        @include m.tablet { 
+            margin-top: 5rem;
+        }
+    }
+
+    &__imgBox{
+        
+        @include m.desktop { 
+            height: 42rem;
+        }
+    }
+
 
     &__imagen{
         margin: 0 auto;
         width: 100%;
+
+        @include m.desktop { 
+            object-fit: cover;
+            height: 100%;
+        }
     }
 
     &__dateBox{
         display: flex;
         justify-content: space-between;
     }
+
+    &__title{
+        font-weight: 700;
+        text-align: left;
+    }
+
+    &__parragraphBox{
+        display: flex;
+        align-items: center;
+    }
+
+    &__parragraph{
+        color: v.$primario;
+        font-size: 2rem;
+        font-weight: 500;
+        margin-top: 1rem 0 0 0;
+    }
+
+}
+
+.bxs-right-arrow-circle{
+    color: v.$primario;
+    font-size: 3rem;
+    margin-left: 1rem;
 }
