@@ -8,11 +8,8 @@
 
     @include m.desktop { 
         margin-top: 15rem;
-        flex-direction: row;
-        justify-content: space-between;
+        @include m.grid(2, 10rem);
         align-items: center;
-        gap: 20rem;
-        flex-wrap: nowrap;
     }
 
     &__title{
