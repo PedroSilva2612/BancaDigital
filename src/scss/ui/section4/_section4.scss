@@ -1,0 +1,111 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.section4{
+    margin-top: 5rem;
+
+    @include m.desktop { 
+        width: 70%;
+        margin-top: 12rem;
+    }
+
+
+    &__box{
+        background-image: linear-gradient(to left top, #6209db, #5808c5, #4e07af, #45069a, #3b0585);
+        color: v.$blanco;
+        border-radius: 2rem;
+        text-align: center;
+        padding: 3rem .5rem;
+
+        @include m.desktop { 
+            padding: 8rem 20rem;
+        }
+
+        @media (min-width:1280px) {
+            padding: 5rem 12rem;
+        }
+
+        
+    }
+
+    &__title{
+        font-weight: 700;
+
+        @include m.desktop { 
+            font-size: 6rem;
+        }
+
+        @media (min-width:1280px) {
+            font-size: 5.5rem;
+        }
+    }
+
+    &__parragraph{
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin: 0 0 1.8rem 0;
+    }
+
+}
+
+.form{
+
+    @include m.tablet { 
+        padding: 0 2rem;
+    }
+
+    &__box{
+        background-color: v.$blanco;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 1rem;
+
+        @include m.tablet { 
+            flex-direction: row;
+        }
+    }
+
+    &__input{
+        text-align: center;
+        width: 100%;
+        border: none;
+        margin: 1rem 0 1rem 0;
+        padding: 1rem 0;
+
+        @include m.tablet { 
+            grid-column: 1/4;
+            width: 80%;
+        }
+
+        @include m.desktop { 
+            font-size: 2rem;
+            margin-left: 2rem;
+        }
+    }
+
+    &__submit{
+        border: none;
+        background-color: v.$primario;
+        color: v.$blanco;
+        padding: 1.2rem;
+        border-radius: 1rem;
+        margin: 1rem 0;
+        cursor: pointer;
+
+
+        @include m.tablet { 
+            margin-right: 5rem;
+        }
+
+        @include m.desktop { 
+            padding: 1.5;
+        }
+
+        
+    }
+
+
+}

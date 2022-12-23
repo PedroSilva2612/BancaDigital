@@ -36,31 +36,24 @@
     text-align: center;
 
     @include m.desktop { 
-        @include m.grid(3, 2rem);
+        @include m.grid(3, 5rem);
     }
 
     &__card{
         @include m.tablet { 
             margin-top: 5rem;
         }
-    }
 
-    &__imgBox{
-        
         @include m.desktop { 
-            height: 42rem;
+            margin-top: 0;
         }
     }
+
 
 
     &__imagen{
         margin: 0 auto;
-        width: 100%;
 
-        @include m.desktop { 
-            object-fit: cover;
-            height: 100%;
-        }
     }
 
     &__dateBox{
@@ -83,6 +76,11 @@
         font-size: 2rem;
         font-weight: 500;
         margin-top: 1rem 0 0 0;
+
+        @include m.desktop { 
+            margin: 1rem 0 0 0;
+            font-size: 2rem;
+        }
     }
 
 }
@@ -91,4 +89,8 @@
     color: v.$primario;
     font-size: 3rem;
     margin-left: 1rem;
+
+    @include m.desktop { 
+        margin-top: 1rem;
+    }
 }
