@@ -1,0 +1,27 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.footer{
+    margin-top: 5rem;
+
+    &__col{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__colTitle{
+        font-size: 2.6rem;
+    }
+    
+    &__colCta{
+        margin-bottom: 2.6rem;
+        font-size: 2rem;
+        font-weight: 400;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+}
