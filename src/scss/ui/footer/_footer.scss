@@ -6,7 +6,6 @@
 
     @include m.tablet { 
         @include m.grid(2, 1rem);
-        align-items: center;
     }
 
     @include m.desktop { 
