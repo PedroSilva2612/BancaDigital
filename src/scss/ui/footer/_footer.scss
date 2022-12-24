@@ -4,6 +4,15 @@
 .footer{
     margin-top: 5rem;
 
+    @include m.tablet { 
+        @include m.grid(2, 1rem);
+        align-items: center;
+    }
+
+    @include m.desktop { 
+        @include m.grid(4, 1rem);
+        
+    }
     &__col{
         display: flex;
         flex-direction: column;
@@ -21,6 +30,24 @@
 
         &:last-child{
             margin-bottom: 0;
+        }
+    }
+
+    &__colCta-icons{
+        margin: 0 0 2.6rem 0;
+    }
+
+    &__icons{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+    &__icon{
+        margin-left: 3.6rem;
+
+        &:first-child{
+            margin-left: 0;
         }
     }
 
