@@ -1,0 +1,15 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.box{
+    transform: translateX(400%);
+    transition: transform .8s ease;
+
+    &:nth-of-type(even){
+        transform: translateX(-400%);
+    }
+
+    &.show{
+        transform: translateX(0);
+    }
+}
